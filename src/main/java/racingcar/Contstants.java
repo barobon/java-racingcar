@@ -6,7 +6,7 @@ public class Contstants {
     public static String RACE_RESULT_MESSAGE = "실행 결과";
     public static String COLON = " : ";
     public static String SCORE_TEXT = "-";
-    public static String LAST_WINNER_MESSAGE = "최종 우승자";
+    public static String LAST_WINNER_MESSAGE = "최종 우승자 : ";
 
 
 }
