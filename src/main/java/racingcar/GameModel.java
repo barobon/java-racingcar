@@ -19,12 +19,12 @@ public class GameModel {
         players.add(player);
     }
 
-    public ArrayList<Player> getWinner(){
+    public ArrayList<String> getWinner(){
         int winnerScore = calculateMaxScore();
-        ArrayList<Player> winners = new ArrayList<Player>();
+        ArrayList<String> winners = new ArrayList<String>();
         for(Player player : players){
             if(player.getScore() == winnerScore)
-                winners.add(player);
+                winners.add(player.getName());
         }
         return winners;
     }
