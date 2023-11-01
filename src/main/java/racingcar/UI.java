@@ -27,6 +27,7 @@ public class UI {
     }
 
     public void printRaceResult(ArrayList<Player> playersList, int raceNumber){
+        System.out.println();   //줄바꿈
         System.out.println(RACE_RESULT_MESSAGE);
         for(int i=0; i<raceNumber; i++){
             printCurrentPlayersScore(playersList);
@@ -41,6 +42,7 @@ public class UI {
     private void printCurrentPlayersScore(ArrayList<Player> playersList){
         for(Player player : playersList){
             String name = player.getName();
+            player.race();
             int score = player.getScore();
 
             System.out.print(name+COLON);
